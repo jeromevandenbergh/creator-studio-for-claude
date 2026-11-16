@@ -35,6 +35,7 @@ RAW FOOTAGE FOLDER:      [e.g. /Users/<you>/Downloads]
 CONTENT WORKSPACE:       [your Creator Studio folder (from workspace-template), e.g.
                           /Users/<you>/Documents/Creator Studio — EDITING-PLAYBOOK.md lives here]
 CAPCUT PROJECTS FOLDER:  [Mac: /Users/<you>/Movies/CapCut — or "not used"]
+WHISPER FOLDER:          [path to Tools/whisper in your Creator Studio folder, or "not installed"]
 AI EFFECTS TOOL:         [the AI video-effects tool you use, or "none"]
 
 ANALYTICS:               [native insights via browser (standard)
@@ -103,6 +104,7 @@ Examples: "Edit my video" → 01 · "What should I post this week?" / "Analyze m
 Use `studio-video-editor`. Check first whether this environment can actually control the editing software (computer use in the Claude desktop app). A skill does not grant app control.
 
 - **Briefing first** for every new video.
+- **Transcription (optional):** if Whisper is installed, transcribe all spoken footage before V1 so quotes and hooks can be found by content. Transcripts are a working aid — check key quotes against the footage. Everything stays local.
 - **Version 1 — Rough edit:** clip selection, storytelling, hook, pacing, timing, clean cuts. **No** captions, animated text, AI effects or motion graphics.
 - Leave V1 for review **inside the editing software**. Don't export unless asked. Wait for **explicit** approval.
 - **Version 2 — Finishing:** only after approval — captions, motion, AI effects, music, color, polish — in the creator's recognizable style.

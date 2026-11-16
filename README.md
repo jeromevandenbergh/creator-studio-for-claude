@@ -61,7 +61,7 @@ Download the package (the ZIP from this GitHub page) and unzip it.
 
 ### Step 5 — Create your Creator Studio folder
 1. Copy the **`workspace-template`** folder to **Documents** (or iCloud Drive) and rename it **`Creator Studio`**.
-2. Inside: `01 Designs`, `02 Presentations`, `03 Motion`, `04 Content reports` (Claude saves its work here), `05 My logo & fonts` (optional: your logo and fonts) and `EDITING-PLAYBOOK.md` (your editing preferences — leave it empty, Claude fills it in after your first approved video).
+2. Inside: `01 Designs`, `02 Presentations`, `03 Motion`, `04 Content reports` (Claude saves its work here), `05 My logo & fonts` (optional: your logo and fonts) `EDITING-PLAYBOOK.md` (your editing preferences — leave it empty, Claude fills it in after your first approved video) and `Tools/whisper` (optional transcription, step 9b).
 
 ### Step 6 — Find your folder paths
 You need them in step 7. On a Mac: in Finder, **right-click** a folder, **hold Option (⌥)** and choose **"Copy … as Pathname"**.
@@ -104,6 +104,16 @@ The first time Claude uses your screen (e.g. your first edit), macOS asks for tw
 Allow both in **System Settings → Privacy & Security** (switch on **Claude**), and restart the app if asked. Claude then asks permission **per app** (e.g. CapCut) — allow it.
 
 ---
+
+### Step 9b (optional) — Install Whisper for transcription
+With Whisper, Claude reads **what is said** in your footage before editing, so it finds the best quotes, hooks and funny moments by content. Everything stays local on your Mac.
+1. Open **Terminal** (Cmd + Space → "Terminal").
+2. Type `cd ` (with a space), drag the **`Creator Studio/Tools/whisper`** folder into the Terminal window, press Enter.
+3. Type `pip3 install faster-whisper`, press Enter.
+4. Type `python3 transcribe.py --download-only`, press Enter. This downloads the model (± 1.6 GB) into `models`. Wait for **"ready"**. Short on space or an older Mac? Use `--model small` (± 0.5 GB).
+5. Put the path to `Tools/whisper` under **WHISPER FOLDER** in your Creator Profile.
+
+From then on the video editor transcribes all spoken footage before Version 1, into a `_Transcripties` folder next to your footage. Skip this step and the editor simply works on image.
 
 ## Part F — Connect your socials
 
@@ -158,6 +168,7 @@ In your Project, ask: *"Create a scheduled task for my weekly content scan"* and
 |---|---|
 | Claude says it can't access a folder | Check the folder is connected to the Project (step 8) and the desktop app is open. |
 | Claude can't control CapCut | Check computer use is on (step 2) and Accessibility + Screen Recording are allowed (step 9). Restart the app. |
+| Claude says Whisper isn't installed | Do step 9b, or leave it: the editor then works on image. |
 | Claude says it needs to sign in to Instagram/TikTok | Sign in again in the built-in browser (step 10). |
 | No statistics | Your account must be a creator/business account; check you can see insights in the app yourself. |
 | A skill isn't used | Check it's on in **Customize → Skills**, or name it: "Use studio-video-editor". |

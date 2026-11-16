@@ -70,6 +70,7 @@ Download het pakket (de ZIP van de GitHub-pagina) en pak het uit.
    - `01 Designs`, `02 Presentations`, `03 Motion` en `04 Content reports`: hier bewaart Claude wat hij voor je maakt.
    - `05 My logo & fonts`: optioneel. Zet hier je logo (PNG/SVG) en fonts in als je die hebt.
    - `EDITING-PLAYBOOK.md`: je montagevoorkeuren. Laat het gerust leeg, Claude vult het aan na je eerste goedgekeurde video.
+   - `Tools/whisper`: optioneel, voor transcriptie van je beelden (zie stap 9b).
 
 ### Stap 6: Zoek de paden van je mappen op
 Die heb je nodig in stap 7. Op een Mac: klik in Finder **met de rechtermuisknop** op een map, **houd de Option-toets (⌥) ingedrukt** en kies **"Kopieer … als padnaam"**. Je hebt drie paden nodig:
@@ -114,6 +115,17 @@ De eerste keer dat Claude je scherm gebruikt (bv. bij je eerste montage), vraagt
 Sta beide toe via **Systeeminstellingen → Privacy en beveiliging**, zet de schakelaar bij **Claude** aan en herstart de app als macOS daarom vraagt. Daarna vraagt Claude **per app** toestemming, bv. voor CapCut. Sta die toe.
 
 ---
+
+### Stap 9b (optioneel): Whisper installeren voor transcriptie
+Met Whisper leest Claude **wat er gezegd wordt** in je beelden, nog voor hij monteert. Zo vindt hij de beste quotes, hooks en grappige momenten op inhoud. Alles blijft lokaal op je Mac.
+1. Open **Terminal** (Cmd + spatie → typ "Terminal").
+2. Typ `cd ` (met een spatie erna), sleep de map **`Creator Studio/Tools/whisper`** in het Terminal-venster en druk op Enter.
+3. Typ `pip3 install faster-whisper` en druk op Enter.
+4. Typ `python3 transcribe.py --download-only` en druk op Enter. Dit downloadt het model (± 1,6 GB) in de map `models`. Wacht tot je **"ready"** ziet.
+   Weinig plaats of een oudere Mac? Gebruik dan `python3 transcribe.py --download-only --model small` (± 0,5 GB).
+5. Vul in je Creator Profile bij **WHISPER FOLDER** het pad naar `Tools/whisper` in.
+
+Vanaf nu transcribeert de video-editor automatisch alle beelden met spraak voor Versie 1. De transcripties komen in een map `_Transcripties` naast je beelden. Sla je deze stap over, dan werkt de editor gewoon op beeld.
 
 ## Deel F: Je socials koppelen
 
@@ -171,6 +183,7 @@ Vraag in je Project: *"Maak een geplande taak voor mijn wekelijkse contentscan."
 |---|---|
 | Claude zegt dat hij geen toegang heeft tot een map | Controleer of de map gekoppeld is aan het Project (stap 8) en of de desktop-app openstaat. |
 | Claude kan CapCut niet bedienen | Controleer of computer use aanstaat (stap 2) en of Claude toegang heeft tot Toegankelijkheid en Schermopname (stap 9). Herstart de app. |
+| Claude zegt dat Whisper niet geïnstalleerd is | Doe stap 9b, of laat het zo: de editor werkt dan op beeld. |
 | Claude zegt dat hij moet inloggen op Instagram of TikTok | Log opnieuw in via de ingebouwde browser (stap 10). |
 | Er verschijnen geen statistieken | Je account moet een creator- of zakelijk account zijn. Kijk in de app of je je statistieken zelf wel ziet. |
 | Een skill wordt niet gebruikt | Kijk in **Customize → Skills** of hij aanstaat. Je kan hem ook bij naam noemen: "Gebruik studio-video-editor". |
