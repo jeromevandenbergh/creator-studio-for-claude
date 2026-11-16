@@ -1,0 +1,12 @@
+# Chart selection and storytelling
+- Time series → line; avoid implying continuous data when dates are discrete and sparse.
+- Category comparison → sorted horizontal bar, with consistent units and zero baseline.
+- Part-to-whole → stacked bars for many categories; donut only for a small, meaningful set totaling 100%.
+- Distribution → histogram/box plot where data supports it.
+- Relationship → scatter with appropriately labeled axes; correlation is not causation.
+- Funnel → stage-by-stage counts and explicitly defined conversion rates.
+- KPI → number, unit, comparison period and contextual delta; don't use a chart when a single number is clearer.
+- Geography → map only if locations and metric definitions are reliable.
+- Before/after → consistent scales and matched comparison windows.
+- Infographics → clear reading order, one takeaway per panel, source notes.
+- Avoid 3D chart distortions, gratuitous gradients and decorative icon sizes that imply false quantities.
