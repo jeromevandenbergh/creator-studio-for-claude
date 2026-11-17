@@ -1,4 +1,4 @@
-# CREATOR STUDIO — PROJECT INSTRUCTIONS (v1.0)
+# CREATOR STUDIO — PROJECT INSTRUCTIONS (v1.1)
 
 > **HOW TO USE THIS FILE**
 > 1. Fill in the **CREATOR PROFILE** below (everything between `[ ]`).
@@ -30,11 +30,14 @@ TARGET AUDIENCE:         [who watches you — age, region, interests]
 TONE OF VOICE:           [how you come across on camera, in a few words]
 RECURRING FORMATS:       [your 2–5 recurring formats or series]
 
-EDITING SOFTWARE:        [e.g. CapCut Desktop (Mac)]
-RAW FOOTAGE FOLDER:      [e.g. /Users/<you>/Downloads]
+COMPUTER:                [Mac or Windows]
+EDITING SOFTWARE:        [e.g. CapCut Desktop]
+RAW FOOTAGE FOLDER:      [Mac e.g. /Users/<you>/Downloads · Windows e.g. C:\Users\<you>\Downloads]
 CONTENT WORKSPACE:       [your Creator Studio folder (from workspace-template), e.g.
-                          /Users/<you>/Documents/Creator Studio — EDITING-PLAYBOOK.md lives here]
-CAPCUT PROJECTS FOLDER:  [Mac: /Users/<you>/Movies/CapCut — or "not used"]
+                          /Users/<you>/Documents/Creator Studio or C:\Users\<you>\Documents\Creator Studio
+                          — EDITING-PLAYBOOK.md lives here]
+CAPCUT PROJECTS FOLDER:  [Mac: /Users/<you>/Movies/CapCut · Windows: C:\Users\<you>\AppData\Local\CapCut
+                          (check CapCut → Settings → drafts location) — or "not used"]
 WHISPER FOLDER:          [path to Tools/whisper in your Creator Studio folder, or "not installed"]
 AI EFFECTS TOOL:         [the AI video-effects tool you use, or "none"]
 
@@ -105,9 +108,11 @@ Use `studio-video-editor`. Check first whether this environment can actually con
 
 - **Briefing first** for every new video.
 - **Transcription (optional):** if Whisper is installed, transcribe all spoken footage before V1 so quotes and hooks can be found by content. Transcripts are a working aid — check key quotes against the footage. Everything stays local.
+- **Numbered versions:** every round is a new timeline V1, V2, V3 … — duplicate the latest timeline in the same project, name it with the next number, change only the copy. Never overwrite a previous version.
+- **Background only:** use computer use in the background; never request full control of the creator's screen.
 - **Version 1 — Rough edit:** clip selection, storytelling, hook, pacing, timing, clean cuts. **No** captions, animated text, AI effects or motion graphics.
 - Leave V1 for review **inside the editing software**. Don't export unless asked. Wait for **explicit** approval.
-- **Version 2 — Finishing:** only after approval — captions, motion, AI effects, music, color, polish — in the creator's recognizable style.
+- **Finishing:** only after explicit approval, on a new numbered timeline — subtitles from the corrected Whisper `.srt` imported directly into the editing project (default when there's speech), captions styling, motion, AI effects, music, color, polish — in the creator's recognizable style.
 - After each approved video, update the Editing Playbook.
 
 ---

@@ -1,5 +1,7 @@
 # 🎬 Creator Studio voor Claude — Handleiding
 
+> 🍎🪟 **Werkt op Mac en Windows.** Stappen die verschillen zijn aangeduid met **🍎 Mac** en **🪟 Windows**. De Windows-stappen zijn nieuw in v1.1. Klopt iets niet met wat je ziet? Laat het ons weten.
+
 **Je eigen creatieve team in Claude.** Na deze installatie werkt Claude voor jou als:
 
 | Rol | Wat Claude doet |
@@ -20,7 +22,7 @@ Alles vertrekt van **jouw eigen socials**. Claude bekijkt wat je post, hoe het e
 ## Wat heb je nodig
 
 - [ ] Een **Claude Pro- of Max-abonnement**. Computer use (Claude die CapCut bedient) en geplande taken werken niet op het gratis plan.
-- [ ] Een **Mac** (aangeraden) of een Windows-pc.
+- [ ] Een **Mac** of een **Windows 10/11**-pc.
 - [ ] **CapCut Desktop**, als je Claude wil laten monteren.
 - [ ] Je **Instagram- en/of TikTok-account**. Voor statistieken heb je een creator- of zakelijk account nodig.
 - [ ] Ongeveer **30 minuten**.
@@ -73,13 +75,17 @@ Download het pakket (de ZIP van de GitHub-pagina) en pak het uit.
    - `Tools/whisper`: optioneel, voor transcriptie van je beelden (zie stap 9b).
 
 ### Stap 6: Zoek de paden van je mappen op
-Die heb je nodig in stap 7. Op een Mac: klik in Finder **met de rechtermuisknop** op een map, **houd de Option-toets (⌥) ingedrukt** en kies **"Kopieer … als padnaam"**. Je hebt drie paden nodig:
+Die heb je nodig in stap 7. Je hebt drie paden nodig.
+- **🍎 Mac:** klik in Finder **met de rechtermuisknop** op een map, **houd de Option-toets (⌥) ingedrukt** en kies **"Kopieer … als padnaam"**.
+- **🪟 Windows:** klik in Verkenner **met de rechtermuisknop** op een map en kies **"Als pad kopiëren"** (Windows 10: houd **Shift** ingedrukt bij het rechtsklikken). Haal de aanhalingstekens weg als je plakt.
 
-| Map | Waar vind je ze | Voorbeeld |
+| Map | 🍎 Voorbeeld Mac | 🪟 Voorbeeld Windows |
 |---|---|---|
-| Je Creator Studio-map | Documenten | `/Users/jouwnaam/Documents/Creator Studio` |
-| Je ruwe beelden | Meestal Downloads, of waar je je clips bewaart | `/Users/jouwnaam/Downloads` |
-| Je CapCut-projecten | Finder → menu **Ga** → **Ga naar map…** → typ `~/Movies/CapCut` | `/Users/jouwnaam/Movies/CapCut` |
+| Je Creator Studio-map | `/Users/jouwnaam/Documents/Creator Studio` | `C:\Users\jouwnaam\Documents\Creator Studio` |
+| Je ruwe beelden | `/Users/jouwnaam/Downloads` | `C:\Users\jouwnaam\Downloads` |
+| Je CapCut-projecten | `/Users/jouwnaam/Movies/CapCut` | `C:\Users\jouwnaam\AppData\Local\CapCut` |
+
+> 💡 Niet zeker waar CapCut je projecten bewaart? Open in CapCut de **Instellingen** en kijk bij de **locatie van concepten** (drafts). Dat is de map. Op Windows is `AppData` verborgen: plak het pad in de adresbalk van Verkenner om de map te openen.
 
 ---
 
@@ -87,7 +93,7 @@ Die heb je nodig in stap 7. Op een Mac: klik in Finder **met de rechtermuisknop*
 
 ### Stap 7: Maak het Project en vul je profiel in
 1. Maak in Claude een nieuw **Project** aan, bv. "Mijn Creative Studio".
-2. Open **`project-instructions.md`** in een teksteditor (TextEdit volstaat).
+2. Open **`project-instructions.md`** in een teksteditor (🍎 TextEdit / 🪟 Kladblok).
 3. Vul bovenaan het **CREATOR PROFILE** in. Alles tussen `[ ]` vervang je door je eigen gegevens: naam, accounts, taal, regio, je vaste formats, je tone of voice, montageprogramma en de drie paden uit stap 6.
 4. Kopieer **het hele bestand** en plak het bij de **instructies** van het Project.
 
@@ -101,29 +107,42 @@ Die heb je nodig in stap 7. Op een Mac: klik in Finder **met de rechtermuisknop*
 Open het Project in de **desktop-app** en voeg bij de gekoppelde mappen (connected folders) deze drie toe:
 1. Je **Creator Studio**-map
 2. Je map met **ruwe beelden** (bv. Downloads)
-3. Je **CapCut**-map (`~/Movies/CapCut`)
+3. Je **CapCut**-map (uit stap 6)
 
 - Claude ziet **alleen** de mappen die je koppelt, en alleen zolang de desktop-app openstaat.
 - Vraagt Claude later zelf toegang tot een map? Dan krijg je een melding om goed te keuren.
 - Wil je een map niet meer delen? Verwijder ze in hetzelfde menu.
 
-### Stap 9: Geef de toestemmingen van macOS
-De eerste keer dat Claude je scherm gebruikt (bv. bij je eerste montage), vraagt macOS om twee toestemmingen:
+### Stap 9: Geef de toestemmingen
+**🍎 Mac:** de eerste keer dat Claude je scherm gebruikt (bv. bij je eerste montage), vraagt macOS om twee toestemmingen:
 - **Toegankelijkheid** (Accessibility): zodat Claude kan klikken, typen en scrollen.
 - **Schermopname** (Screen Recording): zodat Claude kan zien wat er op je scherm staat.
 
-Sta beide toe via **Systeeminstellingen → Privacy en beveiliging**, zet de schakelaar bij **Claude** aan en herstart de app als macOS daarom vraagt. Daarna vraagt Claude **per app** toestemming, bv. voor CapCut. Sta die toe.
+Sta beide toe via **Systeeminstellingen → Privacy en beveiliging**, zet de schakelaar bij **Claude** aan en herstart de app als macOS daarom vraagt.
+
+**🪟 Windows:** je hoeft geen extra systeeminstellingen aan te passen. Vraagt Windows bij de installatie van de desktop-app om beheerdersrechten, sta dat dan toe.
+
+**Allebei:** daarna vraagt Claude **per app** toestemming, bv. voor CapCut. Sta die toe. Claude werkt op de achtergrond en neemt nooit je hele scherm over.
 
 ---
 
 ### Stap 9b (optioneel): Whisper installeren voor transcriptie
-Met Whisper leest Claude **wat er gezegd wordt** in je beelden, nog voor hij monteert. Zo vindt hij de beste quotes, hooks en grappige momenten op inhoud. Alles blijft lokaal op je Mac.
+Met Whisper leest Claude **wat er gezegd wordt** in je beelden, nog voor hij monteert. Zo vindt hij de beste quotes, hooks en grappige momenten op inhoud. Alles blijft lokaal op je computer.
+
+**🍎 Mac**
 1. Open **Terminal** (Cmd + spatie → typ "Terminal").
 2. Typ `cd ` (met een spatie erna), sleep de map **`Creator Studio/Tools/whisper`** in het Terminal-venster en druk op Enter.
 3. Typ `pip3 install faster-whisper` en druk op Enter.
-4. Typ `python3 transcribe.py --download-only` en druk op Enter. Dit downloadt het model (± 1,6 GB) in de map `models`. Wacht tot je **"ready"** ziet.
-   Weinig plaats of een oudere Mac? Gebruik dan `python3 transcribe.py --download-only --model small` (± 0,5 GB).
-5. Vul in je Creator Profile bij **WHISPER FOLDER** het pad naar `Tools/whisper` in.
+4. Typ `python3 transcribe.py --download-only` en druk op Enter. Dit downloadt het model (± 1,6 GB) in de map `models`. Wacht tot je **"ready"** ziet. Weinig plaats of een oudere computer? Gebruik dan `--model small` (± 0,5 GB).
+
+**🪟 Windows**
+1. Installeer **Python 3** via **python.org** → Downloads. Vink in het installatieprogramma **"Add python.exe to PATH"** aan.
+2. Open de map **`Creator Studio\Tools\whisper`** in Verkenner, klik in de adresbalk, typ `powershell` en druk op Enter. PowerShell opent in die map.
+3. Typ `py -m pip install faster-whisper` en druk op Enter.
+4. Typ `py transcribe.py --download-only` en druk op Enter. Wacht tot je **"ready"** ziet (± 1,6 GB; voeg `--model small` toe voor ± 0,5 GB).
+5. Optioneel, sneller: `winget install Gyan.FFmpeg`.
+
+**Allebei:** vul in je Creator Profile bij **WHISPER FOLDER** het pad naar `Tools/whisper` in.
 
 Vanaf nu transcribeert de video-editor automatisch alle beelden met spraak voor Versie 1. De transcripties komen in een map `_Transcripties` naast je beelden. Sla je deze stap over, dan werkt de editor gewoon op beeld.
 
@@ -163,11 +182,11 @@ Typ deze vragen in je Project. Elke rol start met een korte briefing.
 2. Vraag in je Claude Project: **"Monteer mijn nieuwe video."**
 3. Claude stelt de montagebriefing: projectnaam, soort video, platform, lengte, stijl, muziek, extra instructies.
 4. Claude opent CapCut en maakt **Versie 1**: alleen de montage, zonder ondertitels of effecten.
-5. Je bekijkt V1 **in CapCut** en geeft feedback, of je zegt duidelijk "V1 is goedgekeurd".
-6. Pas daarna maakt Claude **Versie 2**: ondertitels, animaties, muziek, effecten.
+5. Je bekijkt V1 **in CapCut** en geeft feedback, of je zegt duidelijk "V1 is goedgekeurd". Elke feedbackronde wordt een nieuwe tijdlijn (V2, V3 …) in hetzelfde project, zodat eerdere versies blijven staan.
+6. Pas na je goedkeuring doet Claude de afwerking: ondertitels (het Whisper-`.srt`-bestand, rechtstreeks in CapCut geïmporteerd, als er gesproken wordt), animaties, muziek, effecten.
 7. Claude **exporteert niets** tot je erom vraagt.
 
-> 💡 Laat de desktop-app open, houd je computer wakker en gebruik je muis en toetsenbord niet terwijl Claude CapCut bedient.
+> 💡 Laat de desktop-app open en houd je computer wakker. Claude werkt op de achtergrond en neemt nooit je hele scherm over. Klik alleen niet zelf in CapCut terwijl Claude aan het monteren is.
 
 ---
 
@@ -182,7 +201,7 @@ Vraag in je Project: *"Maak een geplande taak voor mijn wekelijkse contentscan."
 | Probleem | Oplossing |
 |---|---|
 | Claude zegt dat hij geen toegang heeft tot een map | Controleer of de map gekoppeld is aan het Project (stap 8) en of de desktop-app openstaat. |
-| Claude kan CapCut niet bedienen | Controleer of computer use aanstaat (stap 2) en of Claude toegang heeft tot Toegankelijkheid en Schermopname (stap 9). Herstart de app. |
+| Claude kan CapCut niet bedienen | Controleer of computer use aanstaat (stap 2). 🍎 Mac: heeft Claude toegang tot Toegankelijkheid en Schermopname (stap 9)? Herstart de app. |
 | Claude zegt dat Whisper niet geïnstalleerd is | Doe stap 9b, of laat het zo: de editor werkt dan op beeld. |
 | Claude zegt dat hij moet inloggen op Instagram of TikTok | Log opnieuw in via de ingebouwde browser (stap 10). |
 | Er verschijnen geen statistieken | Je account moet een creator- of zakelijk account zijn. Kijk in de app of je je statistieken zelf wel ziet. |
@@ -198,4 +217,6 @@ Vraag in je Project: *"Maak een geplande taak voor mijn wekelijkse contentscan."
 - **Pas gerust aan.** Verander briefingvragen of werkwijzen in de skillbestanden in `skills/`. Zip daarna de *map* opnieuw (niet de inhoud ervan), of gebruik `make-zips.sh`, en upload ze opnieuw.
 
 ## Updaten
+Wat er per versie veranderd is, staat in [CHANGELOG.md](CHANGELOG.md).
+
 Download de nieuwe versie, verwijder de oude skills in **Customize → Skills** en upload de nieuwe ZIP's. Je Project, je profiel en je Creator Studio-map blijven zoals ze zijn.

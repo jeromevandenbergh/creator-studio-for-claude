@@ -13,7 +13,9 @@ bash "<whisper folder>/run.sh" "<footage file or folder>" --lang <content langua
 - It runs in the background and writes a log; check the log about once a minute until it says `ALL DONE`. Long footage can take several minutes.
 - Files that already have a transcript are skipped (use `--force` only when asked).
 - Output: a `_Transcripties` folder next to the footage with `.txt` (timecodes), `.srt` and `.words.json`.
-- If the model isn't downloaded yet and the download fails, ask the user to do the one-time setup in Terminal (README) and continue on image meanwhile.
+- If the model isn't downloaded yet and the download fails, ask the user to do the one-time setup (README: Terminal on Mac, PowerShell on Windows) and continue on image meanwhile.
+- Works the same on Mac and Windows: the device shell is a Linux environment with the connected folders mounted, so always use `run.sh` there — use the folder paths as the shell sees them, not `C:\…` paths.
+- If the device shell isn't available, ask the user to start it themselves and continue on image meanwhile: 🍎 Mac (Terminal): `bash "<whisper folder>/run.sh" "<footage>" --lang <lang>` · 🪟 Windows: double-click `run-windows.bat` and drag the footage folder onto it, or in PowerShell `.\run-windows.bat "<footage>" --lang <lang>`.
 
 ## 3. Use the transcripts
 - Read the `.txt` files of all clips; mark the strongest lines (hook candidates, punchlines, key messages, CTA-worthy quotes) with their timecodes.
@@ -22,6 +24,6 @@ bash "<whisper folder>/run.sh" "<footage file or folder>" --lang <content langua
 
 ## 4. Rules
 - Transcripts are a **working aid**: always check key quotes, names, brands and dialect against the footage itself.
-- Never use the `.srt` as finished subtitles in V1. In V2 (only after approval and only if subtitles are requested) it may be a starting point, corrected against the audio.
+- Never put subtitles in the montage phase. In the finishing phase (after explicit approval) the `.srt` is the default subtitle source when the video has speech: correct it against the audio (names, dialect, brands), save the corrected file next to the original, and import it as a caption track directly into the editing project — not via another app. Skip when there's no speech, only music, or the creator chose "No subtitles".
 - Everything stays **local**: never upload footage or transcripts to external services.
 - Never delete or move transcripts, the `models` folder or the Whisper scripts.

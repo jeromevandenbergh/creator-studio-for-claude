@@ -1,7 +1,7 @@
 # Captions, motion & AI effects (Version 2 only)
 
 ## Subtitles & on-screen text
-Subtitles are standard for short-form unless the creator says otherwise — **but only after Version 1 approval.**
+Subtitles are standard whenever the video has speech, unless the creator chose "No subtitles" — **but only after the montage is explicitly approved.** Start from the corrected Whisper `.srt`, imported as a caption track directly into the editing project (not via another app), then style it. No speech or music only → no subtitles.
 - Subtitle style from the Editing Playbook, matching the creator's recent videos (fonts, colors, position).
 - Accurate sync, mobile readability, never covering faces or key visuals, platform safe areas, consistent position and size, transcription errors corrected.
 - **Language:** the content language from the Creator Profile. Preserve the creator's natural dialect, vocabulary, expressions and tone — don't "correct" them into formal language. If the spoken language differs, subtitle in that language unless told otherwise.
