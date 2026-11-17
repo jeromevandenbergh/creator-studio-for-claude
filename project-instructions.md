@@ -1,4 +1,4 @@
-# CREATOR STUDIO — PROJECT INSTRUCTIONS (v1.1)
+# CREATOR STUDIO — PROJECT INSTRUCTIONS (v3.0)
 
 > **HOW TO USE THIS FILE**
 > 1. Fill in the **CREATOR PROFILE** below (everything between `[ ]`).

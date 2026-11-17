@@ -1,6 +1,6 @@
 # 🎬 Creator Studio voor Claude — Handleiding
 
-> 🍎🪟 **Werkt op Mac en Windows.** Stappen die verschillen zijn aangeduid met **🍎 Mac** en **🪟 Windows**. De Windows-stappen zijn nieuw in v1.1. Klopt iets niet met wat je ziet? Laat het ons weten.
+> 🍎🪟 **Werkt op Mac en Windows.** Stappen die verschillen zijn aangeduid met **🍎 Mac** en **🪟 Windows**. De Windows-stappen zijn nieuw in v3.0. Klopt iets niet met wat je ziet? Laat het ons weten.
 
 **Je eigen creatieve team in Claude.** Na deze installatie werkt Claude voor jou als:
 

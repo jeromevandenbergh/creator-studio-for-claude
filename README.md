@@ -1,6 +1,6 @@
 # 🎬 Creator Studio for Claude
 
-> 🍎🪟 **Works on Mac and Windows.** Steps that differ are marked **🍎 Mac** and **🪟 Windows**. The Windows steps are new in v1.1 — if something doesn't match what you see, let us know.
+> 🍎🪟 **Works on Mac and Windows.** Steps that differ are marked **🍎 Mac** and **🪟 Windows**. The Windows steps are new in v3.0 — if something doesn't match what you see, let us know.
 
 **Your own creative team inside Claude.** After this setup, Claude works for you as:
 
